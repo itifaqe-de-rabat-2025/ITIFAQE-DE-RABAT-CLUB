@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>لوحة المدربين - الاتفاق الرباطي</title>
+<title>لوحة المدرب | الاتفاق الرباطي</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,153 +16,183 @@
 <body>
 
 
-<div class="content">
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.jpeg">
+
+<h1>
+لوحة المدرب
+</h1>
+
+</div>
 
 
-<h1>لوحة عمل المدربين</h1>
+<button onclick="logout()">
+تسجيل الخروج
+</button>
+
+
+</header>
+
+
+
+
+<section class="content">
+
+
+<h2>
+مرحبا بالمدرب
+</h2>
+
 
 <p>
-نظام إدارة وتطوير الأداء الرياضي لنادي الاتفاق الرباطي
+فضاء خاص لتسيير المجموعة ومتابعة التطور الرياضي للاعبين.
 </p>
 
 
-<hr>
 
 
-<h2>المدير التقني</h2>
+<div class="cards">
 
-<div class="menu">
 
-<a href="#">
-تقييم المدربين شهرياً
-</a>
 
-<a href="#">
-تقييم اللاعبين
-</a>
+<div class="card">
 
-<a href="#">
-متابعة الفئات العمرية
-</a>
+<h3>
+⚽ اللاعبين
+</h3>
 
-<a href="#">
-تقارير التطور الرياضي
+<p>
+مشاهدة ملفات اللاعبين وإدارة المجموعة.
+</p>
+
+<a href="coach-players.html" class="login-btn">
+فتح
 </a>
 
 </div>
 
 
 
-<hr>
 
+<div class="card">
 
-<h2>البرمجة والتطوير</h2>
+<h3>
+📋 التقارير التدريبية
+</h3>
 
-<div class="menu">
+<p>
+كتابة ومتابعة تقارير الحصص التدريبية.
+</p>
 
-<a href="#">
-إنشاء برنامج التدريبات الأسبوعي
-</a>
-
-<a href="#">
-برمجة المباريات الودية
-</a>
-
-<a href="#">
-تنظيم الحصص التدريبية
-</a>
-
-<a href="#">
-متابعة الحمل التدريبي
+<a href="training-reports.html" class="login-btn">
+فتح
 </a>
 
 </div>
 
 
 
-<hr>
 
+<div class="card">
 
-<h2>اللياقة البدنية</h2>
+<h3>
+📊 تقييم اللاعبين
+</h3>
 
-<div class="menu">
+<p>
+إضافة ملاحظات وتقييمات تقنية وبدنية.
+</p>
 
-<a href="#">
-اختبارات السرعة
-</a>
-
-<a href="#">
-اختبارات الرشاقة
-</a>
-
-<a href="#">
-اختبارات القوة والتحمل
-</a>
-
-<a href="#">
-تقارير التطور البدني
+<a href="player-evaluation.html" class="login-btn">
+فتح
 </a>
 
 </div>
 
 
 
-<hr>
 
+<div class="card">
 
-<h2>اللوجستيك والتنظيم</h2>
+<h3>
+🏋️ البرامج التدريبية
+</h3>
 
-<div class="menu">
+<p>
+إدارة البرامج والتمارين الخاصة بالفريق.
+</p>
 
-<a href="#">
-لائحة المعدات
-</a>
-
-<a href="#">
-الحضور والغياب
-</a>
-
-<a href="#">
-تنظيم الملاعب
-</a>
-
-<a href="#">
-تقارير النقص والاحتياجات
+<a href="training-programs.html" class="login-btn">
+فتح
 </a>
 
 </div>
 
 
 
-<hr>
 
+<div class="card">
 
-<h2>تدريب الحراس</h2>
+<h3>
+📷 الصور والفيديوهات
+</h3>
 
-<div class="menu">
+<p>
+رفع ومتابعة محتوى التداريب.
+</p>
 
-<a href="#">
-تقييم الحراس
-</a>
-
-<a href="#">
-برامج تدريب الحراس
-</a>
-
-<a href="#">
-تطور المستوى
+<a href="media.html" class="login-btn">
+فتح
 </a>
 
 </div>
 
 
 
-<hr>
+
+<div class="card">
+
+<h3>
+📝 ملاحظات الفريق
+</h3>
+
+<p>
+تسجيل ملاحظات خاصة بالمجموعة.
+</p>
+
+<a href="coach-notes.html" class="login-btn">
+فتح
+</a>
+
+</div>
 
 
-<h2>التقارير</h2>
 
-<ul>
 
-<li>
-إ
+</div>
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+الاتفاق الرباطي © 2026
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
