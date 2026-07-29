@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>إضافة عضو جديد | الاتفاق الرباطي</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.jpeg">
+
+<h1>
+إضافة عضو جديد
+</h1>
+
+</div>
+
+
+<a href="admin-dashboard.html" class="login-btn">
+لوحة الرئيس
+</a>
+
+</header>
+
+
+
+
+<section class="content">
+
+
+<h2>
+👤 إنشاء حساب عضو جديد
+</h2>
+
+
+<p>
+إضافة أعضاء الإدارة والطاقم التقني.
+</p>
+
+
+
+
+<form id="member-form">
+
+
+
+<label>
+الاسم الكامل
+</label>
+
+<input type="text" placeholder="اسم العضو" required>
+
+
+
+
+<label>
+رقم الهاتف
+</label>
+
+<input type="tel" placeholder="06xxxxxxxx">
+
+
+
+
+
+<label>
+البريد الإلكتروني
+</label>
+
+<input type="email" placeholder="example@email.com">
+
+
+
+
+
+<label>
+صفة العضو
+</label>
+
+
+<select>
+
+
+<option>
+مدرب
+</option>
+
+
+<option>
+أمين المال
+</option>
+
+
+<option>
+الكاتب العام
+</option>
+
+
+<option>
+إداري
+</option>
+
+
+<option>
+مستشار
+</option>
+
+
+</select>
+
+
+
+
+
+<label>
+نوع الصلاحية
+</label>
+
+
+<select>
+
+
+<option>
+إدارة كاملة
+</option>
+
+
+<option>
+إدارة الأخبار
+</option>
+
+
+<option>
+إدارة اللاعبين
+</option>
+
+
+<option>
+إدارة المالية
+</option>
+
+
+<option>
+إدارة التدريب
+</option>
+
+
+</select>
+
+
+
+
+
+<label>
+كلمة السر المؤقتة
+</label>
+
+
+<input type="password" placeholder="سيتم تغييرها لاحقاً">
+
+
+
+
+
+<button type="submit">
+إضافة العضو
+</button>
+
+
+
+</form>
+
+
+
+<div id="member-message" style="display:none;">
+
+<h3>
+✅ تم تجهيز حساب العضو
+</h3>
+
+<p>
+سيتم حفظه عند ربط نظام الحسابات.
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+الاتفاق الرباطي © 2026
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.getElementById("member-form")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.getElementById("member-message")
+.style.display="block";
+
+});
+
+
+</script>
+
+
+
+</body>
+
+</html>
