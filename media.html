@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>الصور والفيديوهات | الاتفاق الرباطي</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.jpeg">
+
+<h1>
+الوسائط
+</h1>
+
+</div>
+
+
+<a href="index.html" class="login-btn">
+الرئيسية
+</a>
+
+</header>
+
+
+
+
+<section class="content">
+
+
+<h2>
+📷 مكتبة الصور والفيديوهات
+</h2>
+
+
+<p>
+مساحة خاصة لحفظ صور المباريات، التداريب، والأنشطة الرسمية للنادي.
+</p>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+📸 الصور
+</h3>
+
+<p>
+إضافة وعرض صور النادي.
+</p>
+
+
+<a href="#" class="login-btn">
+فتح الصور
+</a>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🎥 الفيديوهات
+</h3>
+
+<p>
+عرض فيديوهات المباريات والتداريب.
+</p>
+
+
+<a href="#" class="login-btn">
+فتح الفيديوهات
+</a>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+📁 رفع ملف جديد
+</h3>
+
+<p>
+رفع صورة أو فيديو جديد للنادي.
+</p>
+
+
+<form id="media-form">
+
+
+<input type="file" accept="image/*,video/*">
+
+
+<button type="submit">
+رفع الملف
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="content">
+
+
+<h2>
+آخر الملفات المضافة
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+لا توجد ملفات حالياً
+</h3>
+
+<p>
+ستظهر هنا الصور والفيديوهات بعد إضافتها.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+الاتفاق الرباطي © 2026
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.getElementById("media-form")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("تم تجهيز الملف للرفع بنجاح");
+
+});
