@@ -2,165 +2,255 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>لوحة تحكم الرئيس - الاتفاق الرباطي</title>
+<title>لوحة تحكم الرئيس | الاتفاق الرباطي</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<div class="content">
 
-<h1>لوحة تحكم الرئيس</h1>
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.jpeg">
+
+<h1>
+لوحة تحكم الرئيس
+</h1>
+
+</div>
+
+
+<button onclick="logout()">
+تسجيل الخروج
+</button>
+
+
+</header>
+
+
+
+<section class="content">
+
 
 <h2>
-ادم القدوري - Super Admin / المدير العام
+مرحبا بالرئيس
 </h2>
 
+
 <p>
-لديك الصلاحية الكاملة لإدارة الموقع والنادي.
+من هنا يمكنك إدارة جميع أقسام النادي.
 </p>
 
 
-<hr>
+
+<div class="cards">
 
 
-<h2>إدارة الحسابات</h2>
-
-<div class="menu">
-
-<a href="#">
-إضافة عضو جديد
-</a>
-
-<a href="#">
-تعديل الصلاحيات
-</a>
-
-<a href="#">
-إلغاء حساب
-</a>
-
-<a href="#">
-قبول حسابات اللاعبين
-</a>
-
-</div>
-
-
-<hr>
-
-
-<h2>إدارة المحتوى</h2>
-
-<div class="menu">
-
-<a href="news.html">
-الأخبار والبلاغات
-</a>
-
-<a href="#">
-نشر التقارير
-</a>
-
-<a href="#">
-إدارة الصور والفيديوهات
-</a>
-
-</div>
-
-
-<hr>
-
-
-<h2>الإدارة المالية</h2>
-
-<div class="menu">
-
-<a href="#">
-التقارير المالية
-</a>
-
-<a href="#">
-الاشتراكات والمداخيل
-</a>
-
-<a href="#">
-الوثائق المالية السرية
-</a>
-
-</div>
-
-
-<hr>
-
-
-<h2>إدارة المدربين واللاعبين</h2>
-
-<div class="menu">
-
-<a href="#">
-تقييم المدربين شهرياً
-</a>
-
-<a href="#">
-تقييم اللاعبين
-</a>
-
-<a href="#">
-متابعة التطور الرياضي
-</a>
-
-</div>
-
-
-<hr>
-
-
-<h2>إعدادات الموقع</h2>
-
-<div class="menu">
-
-<a href="#">
-تغيير التصميم
-</a>
-
-<a href="#">
-إدارة النسخ الاحتياطية
-</a>
-
-<a href="#">
-إعدادات الدومين
-</a>
-
-</div>
-
-
-<hr>
-
+<div class="card">
 
 <h3>
-صلاحيات الرئيس:
+👤 إضافة عضو جديد
 </h3>
 
-<ul>
+<p>
+إنشاء حسابات لأعضاء الإدارة والمدربين.
+</p>
 
-<li>الوصول الكامل لجميع أقسام الموقع.</li>
+<a href="add-member.html" class="login-btn">
+فتح
+</a>
 
-<li>إدارة جميع الحسابات والصلاحيات.</li>
+</div>
 
-<li>الموافقة النهائية على الأخبار والتقارير الحساسة.</li>
 
-<li>الاطلاع على الملفات المالية والإدارية.</li>
 
-</ul>
+
+<div class="card">
+
+<h3>
+🔐 الصلاحيات
+</h3>
+
+<p>
+تعديل صلاحيات الأعضاء.
+</p>
+
+<a href="permissions.html" class="login-btn">
+فتح
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+❌ إلغاء حساب
+</h3>
+
+<p>
+حذف أو تعطيل حساب عضو.
+</p>
+
+<a href="accounts.html" class="login-btn">
+فتح
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+⚽ طلبات اللاعبين
+</h3>
+
+<p>
+قبول أو رفض حسابات اللاعبين.
+</p>
+
+<a href="player-requests.html" class="login-btn">
+فتح
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+📰 الأخبار والبلاغات
+</h3>
+
+<p>
+كتابة ونشر أخبار النادي.
+</p>
+
+<a href="news-management.html" class="login-btn">
+فتح
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+📷 الصور والفيديوهات
+</h3>
+
+<p>
+إدارة محتوى الوسائط.
+</p>
+
+<a href="media.html" class="login-btn">
+فتح
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+📋 التقارير
+</h3>
+
+<p>
+كتابة ومتابعة تقارير النادي.
+</p>
+
+<a href="reports.html" class="login-btn">
+فتح
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+💰 الإدارة المالية
+</h3>
+
+<p>
+متابعة تقارير أمين المال.
+</p>
+
+<a href="finance.html" class="login-btn">
+فتح
+</a>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h3>
+👥 اللاعبين والمدربين
+</h3>
+
+<p>
+إدارة الملفات الرياضية.
+</p>
+
+<a href="members-management.html" class="login-btn">
+فتح
+</a>
+
+</div>
+
 
 
 </div>
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+الاتفاق الرباطي © 2026
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
 
 </body>
 
