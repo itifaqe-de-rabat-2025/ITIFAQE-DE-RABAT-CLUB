@@ -2,48 +2,113 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>تسجيل الدخول - الاتفاق الرباطي</title>
+<title>دخول الأعضاء | الاتفاق الرباطي</title>
 
 <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<div class="content">
 
-<h1>تسجيل الدخول</h1>
+<section class="login-page">
+
+
+<div class="login-box">
+
+
+<img src="logo.jpeg" class="login-logo">
+
+
+<h1>
+دخول فضاء الأعضاء
+</h1>
+
 
 <p>
-اختر نوع الحساب الخاص بك
+الاتفاق الرباطي
 </p>
 
 
-<div class="menu">
+
+<form>
 
 
-<a href="admin-login.html">
-👔 أعضاء مكتب النادي
-</a>
+<label>
+نوع الحساب
+</label>
 
 
-<a href="coach-login.html">
-⚽ المدربون
-</a>
+<select id="role">
+
+<option>
+الرئيس
+</option>
+
+<option>
+المدرب
+</option>
+
+<option>
+اللاعب
+</option>
+
+<option>
+أمين المال
+</option>
+
+<option>
+الكاتب العام
+</option>
 
 
-<a href="player-login.html">
-🏃 اللاعبون
+</select>
+
+
+
+<label>
+اسم المستخدم
+</label>
+
+
+<input type="text" placeholder="أدخل اسم المستخدم">
+
+
+
+<label>
+كلمة السر
+</label>
+
+
+<input type="password" placeholder="أدخل كلمة السر">
+
+
+
+<button type="button">
+دخول
+</button>
+
+
+</form>
+
+
+
+<a href="index.html" class="login-btn">
+العودة للرئيسية
 </a>
 
 
 </div>
 
 
-</div>
+</section>
+
+
 
 </body>
 
