@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>تسجيل لاعب جديد - الاتفاق الرباطي</title>
+<title>تسجيل لاعب | الاتفاق الرباطي</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,31 +15,75 @@
 
 <body>
 
-<div class="content">
+
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.jpeg">
+
+<h1>
+تسجيل لاعب جديد
+</h1>
+
+</div>
 
 
-<h1>تسجيل لاعب جديد</h1>
+<a href="index.html" class="login-btn">
+الرئيسية
+</a>
+
+</header>
+
+
+
+
+<section class="content">
+
+
+<h2>
+استمارة الانضمام إلى النادي
+</h2>
+
 
 <p>
-املأ المعلومات التالية لإرسال طلب الانضمام إلى نادي الاتفاق الرباطي.
+يرجى ملء جميع المعلومات بدقة.
 </p>
 
 
-<form>
+
+
+<form id="player-register-form">
+
+
+
+<h3>
+معلومات اللاعب
+</h3>
 
 
 <label>
-اسم اللاعب الكامل
+الاسم الكامل
 </label>
 
-<input type="text" placeholder="الاسم الكامل">
+<input type="text" placeholder="أدخل اسم اللاعب" required>
+
 
 
 <label>
 تاريخ الازدياد
 </label>
 
-<input type="date">
+<input type="date" required>
+
+
+
+<label>
+مكان الازدياد
+</label>
+
+<input type="text" placeholder="مكان الازدياد">
+
 
 
 <label>
@@ -48,60 +92,217 @@
 
 <select>
 
-<option>2015</option>
-<option>2014</option>
-<option>2013</option>
-<option>2012</option>
-<option>2011</option>
-<option>2010</option>
-<option>2009</option>
+<option>
+أقل من 11 سنة
+</option>
+
+<option>
+أقل من 13 سنة
+</option>
+
+<option>
+أقل من 15 سنة
+</option>
+
+<option>
+أقل من 17 سنة
+</option>
+
+<option>
+أقل من 19 سنة
+</option>
 
 </select>
 
 
+
+
 <label>
-مركز اللاعب في الملعب
+المركز في الملعب
 </label>
 
 <select>
 
-<option>حارس مرمى</option>
-<option>مدافع</option>
-<option>وسط ميدان</option>
-<option>مهاجم</option>
+<option>
+حارس مرمى
+</option>
+
+<option>
+مدافع
+</option>
+
+<option>
+وسط ميدان
+</option>
+
+<option>
+مهاجم
+</option>
 
 </select>
 
 
+
+
+
 <label>
-مكان السكن
+الطول
+</label>
+
+<input type="text" placeholder="مثال: 178 cm">
+
+
+
+<label>
+الوزن
+</label>
+
+<input type="text" placeholder="مثال: 65 kg">
+
+
+
+<label>
+القدم المفضلة
 </label>
 
 <select>
 
-<option>الرباط - أكدال</option>
-<option>الرباط - يعقوب المنصور</option>
-<option>الرباط - حسان</option>
-<option>الرباط - السويسي</option>
-<option>الرباط - اليوسفية</option>
-<option>الرباط - التقدم</option>
+<option>
+اليمنى
+</option>
+
+<option>
+اليسرى
+</option>
+
+<option>
+كلتا القدمين
+</option>
 
 </select>
 
 
+
+
+
+<h3>
+معلومات ولي الأمر
+</h3>
+
+
+
 <label>
-رقم هاتف ولي الأمر
+اسم ولي الأمر
 </label>
 
-<input type="tel" placeholder="+212">
+<input type="text" placeholder="الاسم الكامل">
+
+
+
+<label>
+رقم الهاتف
+</label>
+
+<input type="tel" placeholder="06xxxxxxxx">
+
 
 
 <label>
 البريد الإلكتروني
 </label>
 
-<input type="email">
+<input type="email" placeholder="example@email.com">
+
+
+
+
+
+<h3>
+معلومات إضافية
+</h3>
 
 
 <label>
-ملاحظات إضافية
+رفع صورة اللاعب
+</label>
+
+<input type="file" accept="image/*">
+
+
+
+<label>
+ملاحظات
+</label>
+
+<textarea placeholder="أي معلومات إضافية عن اللاعب"></textarea>
+
+
+
+<button type="submit">
+إرسال طلب التسجيل
+</button>
+
+
+
+</form>
+
+
+
+
+<div id="success-message" style="display:none;">
+
+<h3>
+✅ تم إرسال طلبك بنجاح
+</h3>
+
+<p>
+سيتم مراجعة الطلب من إدارة النادي.
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+الاتفاق الرباطي © 2026
+</p>
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.getElementById("player-register-form")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+
+document.getElementById("success-message")
+.style.display="block";
+
+
+this.reset();
+
+
+});
+
+</script>
+
+
+
+</body>
+
+</html>
