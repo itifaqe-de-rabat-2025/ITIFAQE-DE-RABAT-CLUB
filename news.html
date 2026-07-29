@@ -157,3 +157,15 @@ English
 <button type="submit">
 نشر الخبر
 </
+
+  function logout(){
+
+    localStorage.removeItem("user");
+    localStorage.removeItem("role");
+    localStorage.removeItem("language");
+
+    alert("تم تسجيل الخروج بنجاح");
+
+    window.location.href="login.html";
+
+}
