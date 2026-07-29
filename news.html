@@ -1,61 +1,147 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الأخبار والأنشطة - الاتفاق الرباطي</title>
+
+<title>الأخبار والبلاغات | الاتفاق الرباطي</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-<div class="content">
 
-<h1>أخبار وأنشطة نادي الاتفاق الرباطي</h1>
+<header class="header">
 
-<p>
-هنا يتم نشر أخبار النادي، نتائج المباريات، التدريبات،
-الأنشطة والدوريات المشاركة.
-</p>
+<div class="logo-area">
 
-<hr>
+<img src="logo.jpeg">
 
-<h2>آخر الأخبار</h2>
-
-<div>
-<h3>أخبار النادي</h3>
-<p>
-مكان مخصص لكتابة أخبار النادي والبلاغات الرسمية.
-</p>
-<button>إضافة خبر</button>
-</div>
-
-<hr>
-
-<h2>معرض الصور والفيديوهات</h2>
-
-<div>
-<img src="images/match1.jpeg" width="250">
-<img src="images/match2.jpeg" width="250">
-<img src="images/activity.jpeg" width="250">
-</div>
-
-<p>
-يمكن للإدارة إضافة صور المباريات والأنشطة من لوحة التحكم.
-</p>
-
-<hr>
-
-<h2>الأنشطة</h2>
-
-<ul>
-<li>التدريبات الأسبوعية</li>
-<li>المباريات الودية</li>
-<li>البطولات والمشاركات</li>
-<li>الأنشطة الخاصة بالنادي</li>
-</ul>
+<h1>
+أخبار وبلاغات النادي
+</h1>
 
 </div>
 
-</body>
-</html>
+
+<a href="index.html" class="login-btn">
+الرئيسية
+</a>
+
+</header>
+
+
+
+
+<section class="content">
+
+
+<h2>
+آخر أخبار الاتفاق الرباطي
+</h2>
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<h3>
+📰 عنوان الخبر
+</h3>
+
+<p>
+سيظهر هنا محتوى أخبار النادي والبلاغات الرسمية.
+</p>
+
+<small>
+تاريخ النشر: 2026
+</small>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+🏆 نتائج ومشاركات
+</h3>
+
+<p>
+نتائج المباريات، البطولات، والأنشطة الرياضية.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+📢 بلاغات الإدارة
+</h3>
+
+<p>
+بلاغات النادي الرسمية والإعلانات المهمة.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="content">
+
+
+<h2>
+إضافة خبر (للإدارة فقط)
+</h2>
+
+
+<form id="news-form">
+
+
+<label>
+عنوان الخبر
+</label>
+
+<input type="text" placeholder="عنوان الخبر">
+
+
+
+<label>
+محتوى الخبر
+</label>
+
+<textarea placeholder="اكتب تفاصيل الخبر"></textarea>
+
+
+
+<label>
+صورة الخبر
+</label>
+
+<input type="file" accept="image/*">
+
+
+
+<button type="submit">
+نشر الخبر
+</
