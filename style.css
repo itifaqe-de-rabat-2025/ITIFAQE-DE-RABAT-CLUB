@@ -1,267 +1,399 @@
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
+
+:root{
+    --green:#0f5132;
+    --light-green:#8cc63f;
+    --dark:#07110e;
+    --gray:#202927;
+    --white:#ffffff;
+}
+
 
 body{
-    font-family:"Arial", sans-serif;
-    background:#101615;
+    font-family:"Cairo",Arial,sans-serif;
+    background:
+    radial-gradient(circle at top,#263b35,#07110e 60%);
     color:white;
-    line-height:1.8;
+    min-height:100vh;
 }
 
 
-/* الهيدر */
+/* HEADER */
 
 .header{
-    background:linear-gradient(135deg,#0d2b24,#1b3d34);
-    padding:20px 40px;
+    width:100%;
+    padding:18px 5%;
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    border-bottom:3px solid #8cc63f;
+    align-items:center;
+    background:rgba(7,17,14,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(140,198,63,0.4);
     position:sticky;
     top:0;
     z-index:100;
 }
 
-.club-logo{
-    width:90px;
-    height:90px;
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.logo-area img{
+    width:75px;
+    height:75px;
     object-fit:contain;
 }
 
-.header h1{
-    font-size:32px;
+
+.logo-area h1{
+    font-size:28px;
     color:white;
 }
 
 
-/* الأزرار */
+/* BUTTONS */
 
 button,
 .login-btn,
-.menu a,
 .hero-text a{
-    background:linear-gradient(135deg,#8cc63f,#5b8f22);
+
+    background:linear-gradient(
+    135deg,
+    #8cc63f,
+    #3d7a22
+    );
+
     color:white;
-    padding:14px 25px;
     border:none;
-    border-radius:30px;
+    padding:14px 28px;
+    border-radius:35px;
     text-decoration:none;
-    display:inline-block;
     cursor:pointer;
-    font-size:17px;
-    transition:0.4s;
-    margin:8px;
+    font-size:16px;
+    transition:.4s;
 }
 
 
 button:hover,
 .login-btn:hover,
-.menu a:hover,
 .hero-text a:hover{
+
     transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(140,198,63,0.5);
-}
+    box-shadow:
+    0 15px 30px rgba(140,198,63,.35);
 
-
-/* صورة الملعب */
-
-.hero{
-    height:600px;
-    position:relative;
-    overflow:hidden;
-}
-
-
-.stadium{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    filter:brightness(45%);
-}
-
-
-.hero-text{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    text-align:center;
-    width:80%;
-}
-
-
-.hero-text h2{
-    font-size:55px;
-    margin-bottom:20px;
-}
-
-
-.hero-text p{
-    font-size:22px;
 }
 
 
 
-/* الحاويات */
-
-.content,
-.partners,
-.menu,
-.about{
-    width:90%;
-    max-width:1200px;
-    margin:40px auto;
-    background:#18221f;
-    padding:35px;
-    border-radius:25px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.4);
-}
-
-
-h1,h2,h3{
-    color:#8cc63f;
-    margin-bottom:20px;
-}
-
-
-/* القوائم */
-
-.menu{
-    text-align:center;
-}
-
-
-.menu a{
-    min-width:220px;
-}
-
-
-/* المستشهرون */
-
-.partners{
-    text-align:center;
-}
-
-
-.partners img{
-    width:150px;
-    height:150px;
-    object-fit:contain;
-    background:white;
-    border-radius:20px;
-    padding:15px;
-    margin:15px;
-    transition:0.4s;
-}
-
-
-.partners img:hover{
-    transform:scale(1.1);
-}
-
-
-/* النماذج */
-
-form{
-    background:#222d29;
-    padding:25px;
-    border-radius:20px;
-}
-
-
-input,
-textarea,
-select{
-    width:100%;
-    padding:15px;
-    margin:10px 0 20px;
-    border-radius:12px;
-    border:none;
-    background:#f5f5f5;
-    color:#222;
-}
-
-
-textarea{
-    height:150px;
-}
-
-
-/* الجداول */
-
-table{
-    background:#222d29;
-    border-collapse:collapse;
-}
-
-
-td,th{
-    padding:15px;
-    border:1px solid #8cc63f;
-}
-
-
-
-/* القائمة الجانبية */
+/* MENU */
 
 .side-menu{
+
     display:none;
     position:fixed;
     top:100px;
-    right:20px;
-    background:#10201b;
+    right:25px;
     width:280px;
+
+    background:
+    linear-gradient(145deg,#17372d,#07110e);
+
     padding:25px;
     border-radius:25px;
-    z-index:999;
-    box-shadow:0 20px 50px black;
+
+    box-shadow:
+    0 20px 50px black;
+
+    z-index:200;
+
 }
 
 
 .side-menu a{
+
     display:block;
-    margin:10px;
+    color:white;
+    text-decoration:none;
+    padding:14px;
+    margin:8px 0;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+
+.side-menu a:hover{
+
+    background:#8cc63f;
+    color:#07110e;
+
 }
 
 
 
-/* الفوتر */
+/* HERO */
+
+.hero{
+
+    height:650px;
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+.stadium{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    filter:
+    brightness(35%);
+
+}
+
+
+
+.hero-text{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    text-align:center;
+
+    width:85%;
+
+}
+
+
+
+.hero-text h2{
+
+    font-size:65px;
+    margin-bottom:20px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #ffffff,
+    #8cc63f
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+
+}
+
+
+
+.hero-text p{
+
+    font-size:22px;
+    margin-bottom:35px;
+
+}
+
+
+
+
+/* SECTIONS */
+
+
+.content,
+.partners,
+.contact-box{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:40px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:30px;
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+h2{
+
+    color:#8cc63f;
+    margin-bottom:20px;
+
+}
+
+
+
+/* CARDS */
+
+
+.cards{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:
+    linear-gradient(
+    145deg,
+    #1c2d28,
+    #101816
+    );
+
+    padding:35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+
+.card:hover{
+
+    transform:
+    translateY(-10px);
+
+    border:
+    1px solid #8cc63f;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.5);
+
+}
+
+
+
+.card h3{
+
+    color:#8cc63f;
+    margin-bottom:15px;
+
+}
+
+
+
+/* PARTNERS */
+
+
+.partner-box{
+
+    height:180px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:white;
+    color:#222;
+
+    border-radius:25px;
+
+}
+
+
+
+
+/* FOOTER */
+
 
 footer{
-    background:#050706;
-    text-align:center;
+
+    margin-top:60px;
+
     padding:30px;
-    border-top:3px solid #8cc63f;
+
+    text-align:center;
+
+    background:#030706;
+
+    border-top:
+    2px solid #8cc63f;
+
 }
 
 
 
-/* الهاتف */
+/* MOBILE */
+
 
 @media(max-width:700px){
 
-.header{
-    flex-direction:column;
+
+.logo-area h1{
+    font-size:20px;
 }
 
-.header h1{
-    font-size:24px;
-}
 
 .hero{
-    height:450px;
+    height:500px;
 }
+
 
 .hero-text h2{
-    font-size:35px;
+
+    font-size:38px;
+
 }
 
-.menu a{
-    width:100%;
+
+.hero-text p{
+
+    font-size:17px;
+
 }
+
+
+button,
+.login-btn,
+.hero-text a{
+
+    display:block;
+    margin:10px auto;
+
+}
+
 
 }
