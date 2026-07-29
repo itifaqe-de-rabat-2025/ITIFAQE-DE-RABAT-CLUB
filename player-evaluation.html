@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>تقييم اللاعبين | الاتفاق الرباطي</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.jpeg">
+
+<h1>
+تقييم اللاعبين
+</h1>
+
+</div>
+
+
+<a href="coach-dashboard.html" class="login-btn">
+لوحة المدرب
+</a>
+
+</header>
+
+
+
+
+<section class="content">
+
+
+<h2>
+📊 تقييم لاعب
+</h2>
+
+
+<p>
+تقييم الأداء التقني والبدني والتكتيكي للاعبين.
+</p>
+
+
+
+
+<form id="evaluation-form">
+
+
+
+<label>
+اسم اللاعب
+</label>
+
+<input type="text" placeholder="اسم اللاعب">
+
+
+
+
+
+<label>
+المركز
+</label>
+
+<input type="text" placeholder="مركز اللاعب">
+
+
+
+
+
+<label>
+المستوى البدني
+</label>
+
+
+<select>
+
+<option>
+ممتاز
+</option>
+
+<option>
+جيد جداً
+</option>
+
+<option>
+جيد
+</option>
+
+<option>
+يحتاج تطوير
+</option>
+
+</select>
+
+
+
+
+
+<label>
+المستوى التقني
+</label>
+
+
+<select>
+
+<option>
+ممتاز
+</option>
+
+<option>
+جيد جداً
+</option>
+
+<option>
+جيد
+</option>
+
+<option>
+يحتاج تطوير
+</option>
+
+</select>
+
+
+
+
+
+<label>
+الجانب التكتيكي
+</label>
+
+
+<select>
+
+<option>
+ممتاز
+</option>
+
+<option>
+جيد
+</option>
+
+<option>
+يحتاج تطوير
+</option>
+
+</select>
+
+
+
+
+
+<label>
+الانضباط والحضور
+</label>
+
+
+<select>
+
+<option>
+ممتاز
+</option>
+
+<option>
+جيد
+</option>
+
+<option>
+يحتاج متابعة
+</option>
+
+</select>
+
+
+
+
+
+<label>
+ملاحظات المدرب
+</label>
+
+
+<textarea placeholder="ملاحظات خاصة باللاعب"></textarea>
+
+
+
+
+<button type="submit">
+حفظ التقييم
+</button>
+
+
+
+</form>
+
+
+
+
+<div id="evaluation-message" style="display:none;">
+
+<h3>
+✅ تم حفظ تقييم اللاعب
+</h3>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+الاتفاق الرباطي © 2026
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.getElementById("evaluation-form")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.getElementById("evaluation-message")
+.style.display="block";
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
