@@ -1,119 +1,130 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: url("images/stadium.jpeg") center/cover fixed;
-    color: white;
+*{
+    box-sizing:border-box;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(20,20,20,0.85);
-    padding: 15px;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#222;
 }
 
-.logo {
-    width: 90px;
+
+.header{
+    background:#1b3d34;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 25px;
 }
 
-header h1 {
-    text-align: center;
-    color: white;
-    font-size: 28px;
+.club-logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
 }
 
-.right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.header h1{
+    font-size:28px;
 }
 
-.right img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+
+.top-buttons button{
+    background:#ffffff;
+    color:#1b3d34;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    margin:5px;
 }
 
-.menu {
-    font-size: 25px;
-    background: #006b35;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
+
+
+.hero{
+    position:relative;
+    height:450px;
+    overflow:hidden;
 }
 
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: rgba(0,0,0,0.45);
+
+.stadium{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-.hero h2 {
-    font-size: 40px;
-    color: #ffffff;
+
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:rgba(0,0,0,0.55);
+    color:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
 }
 
-.hero p {
-    font-size: 22px;
+
+.hero-text a{
+    display:inline-block;
+    background:#1b3d34;
+    color:white;
+    padding:12px 25px;
+    border-radius:10px;
+    text-decoration:none;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background: #006b35;
-    padding: 15px;
+
+
+.partners{
+    text-align:center;
+    padding:30px;
+    background:white;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+
+.partners img{
+    width:130px;
+    height:130px;
+    object-fit:contain;
+    margin:15px;
 }
 
-nav a:hover {
-    color: #bdbdbd;
+
+
+.menu{
+    text-align:center;
+    padding:30px;
 }
 
-.content {
-    background: rgba(255,255,255,0.9);
-    color: #222;
-    margin: 30px;
-    padding: 25px;
-    border-radius: 15px;
+
+.menu a{
+    display:inline-block;
+    background:#1b3d34;
+    color:white;
+    padding:15px;
+    margin:10px;
+    border-radius:10px;
+    text-decoration:none;
 }
 
-footer {
-    background: #333;
-    text-align: center;
-    padding: 20px;
+
+
+.about{
+    background:white;
+    margin:20px;
+    padding:25px;
+    border-radius:15px;
 }
 
-.hero {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-}
 
-.stadium {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
-.content {
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-    background: rgba(255,255,255,0.90);
-    border-radius: 15px;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #1f3b35;
-    margin: 0;
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
