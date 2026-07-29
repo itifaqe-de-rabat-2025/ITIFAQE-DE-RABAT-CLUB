@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>التقارير التدريبية | الاتفاق الرباطي</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.jpeg">
+
+<h1>
+التقارير التدريبية
+</h1>
+
+</div>
+
+
+<a href="coach-dashboard.html" class="login-btn">
+لوحة المدرب
+</a>
+
+</header>
+
+
+
+
+<section class="content">
+
+
+<h2>
+📝 تقرير حصة تدريبية
+</h2>
+
+
+<p>
+تسجيل تفاصيل الحصص التدريبية ومتابعة تطور المجموعة.
+</p>
+
+
+
+
+<form id="training-report-form">
+
+
+
+<label>
+تاريخ الحصة
+</label>
+
+<input type="date">
+
+
+
+
+
+<label>
+نوع التدريب
+</label>
+
+
+<select>
+
+<option>
+تقني
+</option>
+
+<option>
+بدني
+</option>
+
+<option>
+تكتيكي
+</option>
+
+<option>
+استرجاع
+</option>
+
+<option>
+مباراة تطبيقية
+</option>
+
+</select>
+
+
+
+
+
+<label>
+الفئة أو المجموعة
+</label>
+
+
+<input type="text" placeholder="مثال: أقل من 17 سنة">
+
+
+
+
+
+<label>
+عدد الحاضرين
+</label>
+
+
+<input type="number" placeholder="عدد اللاعبين">
+
+
+
+
+
+<label>
+ملاحظات المدرب
+</label>
+
+
+<textarea placeholder="اكتب ملاحظات الحصة"></textarea>
+
+
+
+
+<label>
+تقييم عام للحصة
+</label>
+
+
+<select>
+
+<option>
+ممتازة
+</option>
+
+<option>
+جيدة
+</option>
+
+<option>
+متوسطة
+</option>
+
+<option>
+تحتاج تحسين
+</option>
+
+</select>
+
+
+
+
+<button type="submit">
+حفظ التقرير
+</button>
+
+
+
+</form>
+
+
+
+
+<div id="training-message" style="display:none;">
+
+<h3>
+✅ تم حفظ التقرير التدريبي
+</h3>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section class="content">
+
+
+<h2>
+📂 التقارير السابقة
+</h2>
+
+
+
+<div class="card">
+
+<p>
+لا توجد تقارير تدريبية حالياً.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+الاتفاق الرباطي © 2026
+</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.getElementById("training-report-form")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+document.getElementById("training-message")
+.style.display="block";
+
+});
+
+
+</script>
+
+
+
+</body>
+
+</html>
