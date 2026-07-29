@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>إدارة الصلاحيات | الاتفاق الرباطي</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="logo-area">
+
+<img src="logo.jpeg">
+
+<h1>
+إدارة الصلاحيات
+</h1>
+
+</div>
+
+
+<a href="admin-dashboard.html" class="login-btn">
+لوحة الرئيس
+</a>
+
+</header>
+
+
+
+
+<section class="content">
+
+
+<h2>
+🔐 تعديل صلاحيات الأعضاء
+</h2>
+
+
+<p>
+اختيار ما يمكن لكل عضو الوصول إليه داخل منصة النادي.
+</p>
+
+
+
+
+<form id="permission-form">
+
+
+
+<label>
+اختيار العضو
+</label>
+
+
+<select>
+
+
+<option>
+اختر العضو
+</option>
+
+
+<option>
+المدرب
+</option>
+
+
+<option>
+أمين المال
+</option>
+
+
+<option>
+الكاتب العام
+</option>
+
+
+<option>
+الإداري
+</option>
+
+
+</select>
+
+
+
+
+
+<h3>
+الصلاحيات المتاحة
+</h3>
+
+
+
+
+<label>
+<input type="checkbox">
+ إدارة اللاعبين
+</label>
+
+
+
+<br>
+
+
+
+<label>
+<input type="checkbox">
+ إدارة المدربين
+</label>
+
+
+
+<br>
+
+
+
+<label>
+<input type="checkbox">
+ كتابة الأخبار والبلاغات
+</label>
+
+
+
+<br>
+
+
+
+<label>
+<input type="checkbox">
+ رفع الصور والفيديوهات
+</label>
+
+
+
+<br>
+
+
+
+<label>
+<input type="checkbox">
+ مشاهدة التقارير
+</label>
+
+
+
+<br>
+
+
+
+<label>
+<input type="checkbox">
+ الإدارة المالية
+</label>
+
+
+
+<br>
+
+
+
+<label>
+<input type="checkbox">
+ إدارة الحسابات
+</label>
+
+
+
+
+
+<br><br>
+
+
+<button type="submit">
+حفظ الصلاحيات
+</button>
+
+
+
+</form>
+
+
+
+
+<div id="permission-message" style="display:none;">
+
+<h3>
+✅ تم تحديث الصلاحيات
+</h3>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+الاتفاق الرباطي © 2026
+</p>
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+document.getElementById("permission-form")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+
+document.getElementById("permission-message")
+.style.display="block";
+
+
+});
+
+
+</script>
+
+
+</body>
+
+</html>
