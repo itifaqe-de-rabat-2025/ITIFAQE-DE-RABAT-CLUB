@@ -1,164 +1,135 @@
-// ===============================
-// الاتفاق الرباطي - Main Script
-// ===============================
+let currentLanguage = "ar";
 
 
-// القائمة الجانبية
+function setLanguage(lang){
 
-function openMenu(){
+currentLanguage = lang;
 
-    const menu = document.getElementById("side-menu");
 
-    if(!menu) return;
+if(document.getElementById("title")){
 
-    if(menu.style.display === "block"){
+if(lang === "en"){
 
-        menu.style.display = "none";
+document.getElementById("title").innerHTML =
+"Welcome to ITIFAQE DE RABAT CLUB";
 
-    }else{
 
-        menu.style.display = "block";
+document.getElementById("description").innerHTML =
+"Football club for training and developing talents.";
 
-    }
+}
+
+else{
+
+
+document.getElementById("title").innerHTML =
+"مرحباً بكم في نادي الاتفاق الرباطي";
+
+
+document.getElementById("description").innerHTML =
+"نادي رياضي لتكوين وتطوير المواهب الكروية.";
+
+}
 
 }
 
 
 
-// إغلاق القائمة عند الضغط خارجها
-
-document.addEventListener("click", function(e){
-
-    const menu = document.getElementById("side-menu");
-
-    const button = e.target.closest("button");
+if(document.getElementById("login-title")){
 
 
-    if(menu && !menu.contains(e.target) && !button){
+if(lang === "en"){
 
-        menu.style.display="none";
+document.getElementById("login-title").innerHTML =
+"Login";
 
-    }
+document.getElementById("email").placeholder =
+"Email";
 
-});
+document.getElementById("password").placeholder =
+"Password";
 
+}
 
-
-
-// تغيير اللغة
-
-function changeLanguage(lang){
-
-    localStorage.setItem("language", lang);
-
-    const translations = {
-
-        ar:{
-            direction:"rtl"
-        },
-
-        en:{
-            direction:"ltr"
-        }
-
-    };
+else{
 
 
-    document.documentElement.dir =
-    translations[lang].direction;
+document.getElementById("login-title").innerHTML =
+"تسجيل الدخول";
 
+document.getElementById("email").placeholder =
+"البريد الإلكتروني";
 
-    document.documentElement.lang = lang;
-
-
-    location.reload();
+document.getElementById("password").placeholder =
+"كلمة المرور";
 
 }
 
 
-
-
-// حفظ اللغة المختارة
-
-function loadLanguage(){
-
-    const lang = localStorage.getItem("language") || "ar";
-
-
-    document.documentElement.lang = lang;
-
-
-    if(lang==="en"){
-
-        document.documentElement.dir="ltr";
-
-    }else{
-
-        document.documentElement.dir="rtl";
-
-    }
-
 }
 
-
-loadLanguage();
-
-
-
-
-// زر تسجيل الخروج
-
-function logout(){
-
-    localStorage.removeItem("user");
-
-    localStorage.removeItem("role");
-
-    window.location.href="login.html";
 
 }
 
 
 
 
-// التحقق من دخول المستخدم
-
-function checkLogin(){
-
-    const user = localStorage.getItem("user");
+function login(){
 
 
-    const logoutBtn=document.getElementById("logout-btn");
+let email =
+document.getElementById("email").value;
 
 
-    if(user && logoutBtn){
+let password =
+document.getElementById("password").value;
 
-        logoutBtn.style.display="block";
 
-    }
+
+let message =
+document.getElementById("message");
+
+
+
+if(email === "" || password === ""){
+
+
+message.innerHTML =
+"المرجو إدخال المعلومات";
+
+
+return;
 
 }
 
 
 
-checkLogin();
+
+// دخول تجريبي سيتم ربطه لاحقاً بقاعدة البيانات
+
+
+if(email === "admin@itifaqe.com" && password === "123456"){
+
+
+message.innerHTML =
+"تم الدخول بنجاح";
+
+
+window.location.href =
+"admin-dashboard.html";
+
+
+}
+
+else{
+
+
+message.innerHTML =
+"المعلومات غير صحيحة";
+
+
+}
 
 
 
-
-// رسالة ترحيب
-
-function welcomeUser(){
-
-    const name =
-    localStorage.getItem("user");
-
-
-    const box =
-    document.getElementById("welcome-user");
-
-
-    if(name && box){
-
-        box.innerHTML=
-        "مرح
+}
