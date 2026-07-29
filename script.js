@@ -49,7 +49,27 @@ document.addEventListener("click", function(e){
 
 function changeLanguage(lang){
 
-    localStorage.setItem("language",lang);
+    localStorage.setItem("language", lang);
+
+    const translations = {
+
+        ar:{
+            direction:"rtl"
+        },
+
+        en:{
+            direction:"ltr"
+        }
+
+    };
+
+
+    document.documentElement.dir =
+    translations[lang].direction;
+
+
+    document.documentElement.lang = lang;
+
 
     location.reload();
 
